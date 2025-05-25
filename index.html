@@ -11,6 +11,7 @@
 <body>
     <div class="Navbar">
         <p class="logo">Lakeview Residency</p>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
         <div class="nav-links">
             <a href="#flats">Flats</a>
             <a href="#gall">Gallery</a>
@@ -338,6 +339,18 @@
                 alert("❌ Failed to send. Please try again.\n" + error.text);
             });
     });
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    });
+
 </script>
 
 
