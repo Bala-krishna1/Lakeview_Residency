@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeview Residency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Navbar">
+        <p class="logo">Lakeview Residency</p>
+        <div class="nav-links">
+            <a href="#flats">Flats</a>
+            <a href="#gall">Gallery</a>
+            <a href="#explore">Neighborhood</a>
+            <a href="#loc">Location</a>
+        </div>
+    </div>
+    <div id="flats" class="head"><strong>Flat Details</strong></div>
+    <div class="flat">
+        <div class="details-section-semi">
+            <h2>Semi Furnished</h2>
+            <div class="flats">
+                <div class="details_1bhk">
+                    <h2>1 BHK</h2>
+                    <p><strong>Advance:</strong> ₹50,000</p>
+                    <p><strong>Price:</strong> ₹18,000 + Maintenance</p>
+                    <p><strong>Maintenance Charge:</strong> ₹1,000/month</p>
+                    <p><strong>Facilities:</strong> 1 Double Cupboard(Bedroom),1 Console Table(Hall), Common Wifi,
+                        Drinking Water and Common Washing Machine(Available at Ground Floor)</p>
+                </div>
+                <div class="details_2bhk">
+                    <h2>2 BHK</h2>
+                    <p><strong>Advance:</strong> ₹70,000</p>
+                    <p><strong>Price:</strong> ₹24,000 + Maintenance</p>
+                    <p><strong>Maintenance Charge:</strong> ₹1,000/month</p>
+                    <p><strong>Facilities:</strong> 1 Double Cupboard(Bedroom),1 Console Table(Hall), Common Wifi,
+                        Drinking Water and Common Washing Machine(Available at Ground Floor)</p>
+                </div>
+            </div>
+        </div>
+        <div class="details-section-full">
+            <h2>Fully Furnished</h2>
+            <div class="flats">
+                <div class="details_1bhk">
+                    <h2>1 BHK</h2>
+                    <p><strong>Advance:</strong> ₹75,000</p>
+                    <p><strong>Price:</strong> ₹23,000 + Maintenance</p>
+                    <p><strong>Maintenance Charge:</strong> ₹1,000/month</p>
+                    <p><strong>Facilities:</strong> 1 Double Cupboard(Bedroom),1 Console Table(Hall), Sofa & Teapoy,
+                        Refrigerator, Bed, TV, Gas & Stove, Common Wifi, Drinking Water and Common Washing
+                        Machine(Available at Ground Floor)</p>
+                </div>
+                <div class="details_2bhk">
+                    <h2>2 BHK</h2>
+                    <p><strong>Advance:</strong> ₹90,000</p>
+                    <p><strong>Price:</strong> ₹29,000 + Maintenance</p>
+                    <p><strong>Maintenance Charge:</strong> ₹1,000/month</p>
+                    <p><strong>Facilities:</strong> 1 Double Cupboard(Bedroom),1 Console Table(Hall), Sofa & Teapoy,
+                        Refrigerator, Bed, TV, Gas & Stove, Common Wifi, Drinking Water and Common Washing
+                        Machine(Available at Ground Floor)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gall" class="head"><strong>Gallery</strong></div>
+    <div class="gallery">
+        <div class="slider-container-semi">
+            <h2>Semi Furnished</h2>
+            <div class="slider-track">
+                <div class="gallery-image">
+                    <img src="static/Nf1.jpeg" alt="Flat 5">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/NF3.jpeg" alt="Flat 6">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/NF5.jpeg" alt="Flat 7">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/NF6.jpeg" alt="Flat 8">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/NF9.jpeg" alt="Flat 9">
+                </div>
+            </div>
+        </div>
+        <div class="slider-container-full">
+            <h2>Fully Furnished</h2>
+            <div class="slider-track">
+                <div class="gallery-image">
+                    <img src="static/Furn2.jpeg" alt="Flat 1">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/Furn7.jpeg" alt="Flat 2">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/Furn10.jpeg" alt="Flat 3">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/Furn12.jpeg" alt="Flat 4">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/Furn13.jpeg" alt="Flat 4">
+                </div>
+                <div class="gallery-image">
+                    <img src="static/Furn14.jpeg" alt="Flat 4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">X</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <div id="explore" class="head"><strong>Nearby Locations</strong></div>
+
+    <div class="locs">
+        <div class="places">
+            <h2>Nallurhalli Lake</h2>
+            <p><strong>Distance:</strong> 250m</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Nallurahalli+Lake,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Udupi Hotel</h2>
+            <p><strong>Distance:</strong> 500m</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Sri+Udupi+Food+Hub+Whitefield,+Siddhapura+Main+Road,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Divyashree Techpark</h2>
+            <p><strong>Distance:</strong> 1.6km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Divyashree+Technopark,+Kundalahalli,+Whitefield,+Bengaluru', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Metro Stations</h2>
+            <p><strong>Distance:</strong> 1.5km / 2.0km</p>
+            <div class="multi-links">
+                <a href="#" class="map-link"
+                    onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/nallurhalli+metro+kundanahalli+side,+Whitefield,+Bengaluru', event)">Nallurhalli
+                    Metro</a>
+                <a href="#" class="map-link"
+                    onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Sri+Sathya+Sai+Hospital+Metro+Station,+Whitefield,+Bengaluru', event)">Satya
+                    Sai Metro</a>
+            </div>
+        </div>
+
+
+        <div class="places">
+            <h2>Vydehi Hospital</h2>
+            <p><strong>Distance:</strong> 1.5km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Vydehi+Hospital+-+Gate+3+Parking+Lot,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Sri Satya Sai Hospital</h2>
+            <p><strong>Distance:</strong> 2.4km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Sri+Sathya+Sai+Super+Speciality+Hospital+Registration+Block,+Whitefield,+Bengaluru,+Karnataka+560066', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>ITPL Back Gate</h2>
+            <p><strong>Distance:</strong> 1.5km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/ITPL+BACK+GATE,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Nexus Shantiniketan Mall</h2>
+            <p><strong>Distance:</strong> 3.4km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/NEXUS+SHANTINIKETAN,+Whitefield+Main+Road,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Whitefield</h2>
+            <p><strong>Distance:</strong> 2.2km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Dmart Siddapura</h2>
+            <p><strong>Distance:</strong> 2.6km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/DMart+Siddapura,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>Park Square Mall</h2>
+            <p><strong>Distance:</strong> 2km by Walk / 3.6km by Vehicle</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/Park+Square+Mall,+Whitefield,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+
+        <div class="places">
+            <h2>KSR Railway Station</h2>
+            <p><strong>Distance:</strong> 22km</p>
+            <a href="#" class="map-link"
+                onclick="openMapModal('https://www.google.com/maps/dir/89,+7,+Nallurhalli,+Whitefield,+Bengaluru,+Karnataka+560066/KSR+Bengaluru+City+Junction+(Bangalore),+M.G.+Railway+Colony,+Majestic,+Bengaluru,+Karnataka', event)">View
+                Directions</a>
+        </div>
+    </div>
+
+
+    <div id="mapModal" class="map-modal">
+        <div class="map-modal-content" id="mapModalContent">
+            <span class="map-modal-close" onclick="closeMapModal()">X</span>
+            <iframe id="mapFrame" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a id="modalMapLink" href="#" target="_blank" class="map-link">View Full Directions on Google Maps →</a>
+        </div>
+    </div>
+
+    <div id="loc" class="head"><strong>Our Location</strong></div>
+    <div class="myloc">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.9980957671582!2d77.73334686958488!3d12.972338799208943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13001f5017b1%3A0xa26ea6d9da8b24ae!2sLakeview%20Residency!5e0!3m2!1sen!2sin!4v1747117137468!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-row">
+        <h2 class="footer-title">Connect with Us</h2>
+
+        <form id="infoForm" class="footer-form">
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required />
+            <input type="tel" name="user_phone" placeholder="Contact Number" required />
+            <select name="car_parking" required>
+                <option value="">Is Car Parking Needed?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Lakeview Residency. All rights reserved.
+    </div>
+</footer>
+
+<script>
+
+</script>
+
+<script>
+    //Image
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const galleryImages = document.querySelectorAll('.gallery-image img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    // Close when clicking outside the image
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox || e.target.classList.contains('close')) {
+            closeLightbox();
+        }
+    });
+    //Map
+    function openMapModal(directionURL, event) {
+        event.preventDefault();
+
+        const place = directionURL.split("/dir/")[1]?.split("/")[1] || "";
+        const embedURL = `https://www.google.com/maps?q=${encodeURIComponent(place)}&output=embed`;
+
+        document.getElementById('mapFrame').src = embedURL;
+        document.getElementById('modalMapLink').href = directionURL;
+        document.getElementById('mapModal').style.display = 'flex';
+    }
+
+    function closeMapModal() {
+        document.getElementById('mapModal').style.display = 'none';
+        document.getElementById('mapFrame').src = '';
+        document.getElementById('modalMapLink').href = '#';
+    }
+
+    // Close modal when clicking outside content
+    window.addEventListener('click', function (e) {
+        const modal = document.getElementById('mapModal');
+        const content = document.getElementById('mapModalContent');
+        if (e.target === modal) {
+            closeMapModal();
+        }
+    });
+</script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("DGpK0Ye5B_hCa92Az");
+
+    document.getElementById('infoForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail_lakeview', 'template_4x3sxiq', this)
+            .then(() => {
+                alert("✅ Message sent! We'll contact you soon.");
+                this.reset();
+            }, (error) => {
+                alert("❌ Failed to send. Please try again.\n" + error.text);
+            });
+    });
+</script>
+
+
+</html>
